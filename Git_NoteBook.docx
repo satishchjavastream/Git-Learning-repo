@@ -3,7 +3,7 @@ Git is a distibuted repository managment.
 Git 3 stages in local before moving to centrol repository (GitHub)
 Workspace area : Devloper create new file or modified the file then it will go to workspace
 git status
-Index (or) staging area : track the information in the logs. commit id, author details.
+Index (or) staging area : track the information in the logs. track id, author details.
 git log
 Local repository area : Which files are in local repository those files only we can push it into centrol repository.
 
@@ -17,7 +17,10 @@ touch file-name
 example touch file.txt
 git status : modified or newly created files are in which area. staging or index area.
 git add file-name
+git add file-name1 file-name2
 git add .
+git add *
+git add -A
 git commit -m "code changes added"
 
 
