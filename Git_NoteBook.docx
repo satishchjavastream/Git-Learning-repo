@@ -1,0 +1,25 @@
+Git is a distibuted repository managment.
+
+Git 3 stages in local before moving to centrol repository (GitHub)
+Workspace area : Devloper create new file or modified the file then it will go to workspace
+git status
+Index (or) staging area : track the information in the logs. commit id, author details.
+git log
+Local repository area : Which files are in local repository those files only we can push it into centrol repository.
+
+
+Git useful commands:
+git init  -- to initalze git repo
+git config --global user,name "Satishc"
+git config --global user.email "devops@gmail.com"
+git config --list
+touch file-name
+example touch file.txt
+git status : modified or newly created files are in which area. staging or index area.
+git add file-name
+git add .
+git commit -m "code changes added"
+
+
+
+
