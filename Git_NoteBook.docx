@@ -9,6 +9,8 @@ Local repository area : Which files are in local repository those files only we 
 
 
 Git useful commands:
+Basic commands:
+===============
 git init  -- to initalze git repo
 git config --global user,name "Satishc"
 git config --global user.email "devops@gmail.com"
@@ -26,6 +28,12 @@ git reset head file-name
 git rest --soft <Commit_id>    move the files from local areat to index or staging area.
 git reset --mixed <Commit_id>  move the files from local area to workspace area.
 git commit -m "code changes added" three.txt   modified files can commit directly from workspace to local area.  
+
+Branch commands:
+=================
+git clone <path of the central repository>  clone the repositry from the centrol to workspace.
+git clone https://github.com/satishchjavastream/SQLCommands.git
+
 
 
 
