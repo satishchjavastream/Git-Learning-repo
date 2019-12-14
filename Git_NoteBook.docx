@@ -33,6 +33,10 @@ Branch commands:
 =================
 git clone <path of the central repository>  clone the repositry from the centrol to workspace.
 git clone https://github.com/satishchjavastream/SQLCommands.git
+git pull                      latest modifications pulled from the centrol repository to workspace
+git pull origin <branch_name>
+git push                      after commit (local repository code changes) pushed to centrol repository              
+git push origin <branch-name>
 
 
 
