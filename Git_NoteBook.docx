@@ -22,6 +22,11 @@ git add .
 git add *
 git add -A
 git commit -m "code changes added"
+git reset head file-name
+git rest --soft <Commit_id>
+git reset --mixed <Commit_id>
+
+
 
 
 
