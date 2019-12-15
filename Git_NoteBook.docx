@@ -59,6 +59,67 @@ git branch -d release-1 delete the branch
 git branch -D release-1 delete the branch forcefully.
 git push origin master      push the code to master1 branch (local repository to centrol repository)
 git push origin -d master1  delete the branch from centrol repository
+rm file-name                delete the file from centrol repository
+
+Merge conflicts resloution
+==========================
+Skip the merge. one step back
+git merge --abort
+How to slove the merge conflicts
+------------------------------
+Same file we modified in two different branchs and planing to merge the branch from one branch to two then we will see the merge conflict
+master banch has a file1.txt,  Now modified the data in file1.txt
+master1 branch has a file1.txt same way modified the data in file1.txt
+Now we are planing to merge the master1 reposiroty to master. then we will observe that there will be a CONFLICT
+-----------------------
+SB-IN-5MJRPH2+Satish@SB-IN-5MJRPH2 MINGW64 /d/Learning/Git/gitPractice/practicegit (master)
+$ git merge master1
+Auto-merging file1.txt
+CONFLICT (content): Merge conflict in file1.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+SB-IN-5MJRPH2+Satish@SB-IN-5MJRPH2 MINGW64 /d/Learning/Git/gitPractice/practicegit (master|MERGING)
+$ vi file1.txt
+
+SB-IN-5MJRPH2+Satish@SB-IN-5MJRPH2 MINGW64 /d/Learning/Git/gitPractice/practicegit (master|MERGING)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   file1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+SB-IN-5MJRPH2+Satish@SB-IN-5MJRPH2 MINGW64 /d/Learning/Git/gitPractice/practicegit (master|MERGING)
+$ git add .
+
+SB-IN-5MJRPH2+Satish@SB-IN-5MJRPH2 MINGW64 /d/Learning/Git/gitPractice/practicegit (master|MERGING)
+$ git commit  -m "conflict file changes"
+[master 246d193] conflict file changes
+
+SB-IN-5MJRPH2+Satish@SB-IN-5MJRPH2 MINGW64 /d/Learning/Git/gitPractice/practicegit (master)
+
+
+
+---------------
+git diff file-Name  check the difference between two files.
+
+
+
+
+
+
+
+
+
 
 
 
