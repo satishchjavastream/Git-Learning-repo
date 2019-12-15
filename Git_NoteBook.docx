@@ -51,7 +51,18 @@ git push origin <branch-name>
 Branch is nothing but a copy of the master repository data.
 Branch commands:
 ================
-B
+git branch              Know the branch inforation. and highlate the select branch in green colour
+git branch release-1    Creat a new branch
+git checkout release-1  move from exist branch to new branch (example: release-1)
+git merge release-1     merge the new files or modified files from release branch to master.so goto target branch (master branch) then merge the release-1 branch.
+git branch -d release-1 delete the branch
+git branch -D release-1 delete the branch forcefully.
+git push origin master      push the code to master1 branch (local repository to centrol repository)
+git push origin -d master1  delete the branch from centrol repository
+
+
+
+
 
 
 
