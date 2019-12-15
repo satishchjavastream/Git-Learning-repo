@@ -29,14 +29,29 @@ git rest --soft <Commit_id>    move the files from local areat to index or stagi
 git reset --mixed <Commit_id>  move the files from local area to workspace area.
 git commit -m "code changes added" three.txt   modified files can commit directly from workspace to local area.  
 
-Branch commands:
-=================
+git log               Logs will show the commit id,authore and date.
+git log --oneline     Logs will display in one line.
+git log -n            Logs will display n number of the commit information.
+git log --oneline -n  Logs will display the short form(one line) and number of commits.
+git log --author=<AUTHOR NAME>  Logs will display based on the author name
+git log --since=yyyy-mm-dd      Logs will display since to now
+git log --until=yyyy-mm-dd      Logs will display until
+git log --since=yyyy-mm-dd --until=yyyy-mm-dd   logs from that from_date to to_date
+
+
+Central repository commands :
+============================
 git clone <path of the central repository>  clone the repositry from the centrol to workspace.
 git clone https://github.com/satishchjavastream/SQLCommands.git
 git pull                      latest modifications pulled from the centrol repository to workspace
 git pull origin <branch_name>
 git push                      after commit (local repository code changes) pushed to centrol repository              
 git push origin <branch-name>
+
+Branch is nothing but a copy of the master repository data.
+Branch commands:
+================
+B
 
 
 
