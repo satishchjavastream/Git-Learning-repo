@@ -111,9 +111,15 @@ SB-IN-5MJRPH2+Satish@SB-IN-5MJRPH2 MINGW64 /d/Learning/Git/gitPractice/practiceg
 
 ---------------
 
-git diff file-Name        Check the difference between two files.
+git diff file-Name        Check the modifications with in the same file .
 git diff master master1   Check the difference between two branch files.
 git cherry-pick 6dc0d20   move the particular file from one branch to another branch then use cherry-pick command
+
+Stash memory
+============
+temporary storage area. 
+
+
 
 
 
