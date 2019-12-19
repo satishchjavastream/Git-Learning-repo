@@ -137,6 +137,33 @@ stash@{0}: On master1: stash1
 git stash show stash@{0}
 f1.txt | 0
  1 file changed, 0 insertions(+), 0 deletions(-)
+ 
+ pop
+ apply
+ drop
+ ========
+ 
+ git stash pop             Move from latest stash memory to staging or index area
+ git stash pop stash@{2}   Move that particular stash memory to staging or index area
+ 
+ git stash apply           Copy from latest stash memory to staging or index area
+ git stash apply stash@{1} Copy from particulr stash memory to staging or index area
+ 
+ git stash drop             drop the latest stash memory.
+ git stash drop stash@{0}   drop the particular stash memory
+ 
+ create alias
+ git config --global alias.s "status"
+ remove alias
+ git config --global --unset alias.s
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
 
 
