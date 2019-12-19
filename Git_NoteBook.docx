@@ -138,6 +138,7 @@ git stash show stash@{0}
 f1.txt | 0
  1 file changed, 0 insertions(+), 0 deletions(-)
  
+ ===
  pop
  apply
  drop
@@ -156,6 +157,26 @@ f1.txt | 0
  git config --global alias.s "status"
  remove alias
  git config --global --unset alias.s
+ 
+ Tag - to mak the release point
+ ====
+ Create Tag
+ -----------
+ git tag <TAG_NAME>
+ git tag v.1.1
+ 
+ Delete Tag
+ -----------
+ git tag -d <TAG_NAME>
+ git tag -d v.1.1
+ 
+ git push origin <tag_name>
+ git push origin tag-1.2
+ git push origin --tags
+ git push origin -d tag-1.2
+ git push origin -d tag-1.2 tag-1.3 tag-1.4
+ 
+ 
  
  
  
