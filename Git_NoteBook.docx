@@ -118,6 +118,29 @@ git cherry-pick 6dc0d20   move the particular file from one branch to another br
 Stash memory
 ============
 temporary storage area. 
+Workspace --> Staging or Index Area --> Local area
+Workspace --> Staging or Index area --> Local area
+                    |                
+                Stash area
+              
+git status
+touch f1.txt
+touch f2.txt
+git add f1.txt
+
+git stash save "stash1"
+Saved working directory and index state On master1: stash1
+
+git stash list
+stash@{0}: On master1: stash1
+
+git stash show stash@{0}
+f1.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+
+
+
 
 
 
