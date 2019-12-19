@@ -162,19 +162,24 @@ f1.txt | 0
  ====
  Create Tag
  -----------
- git tag <TAG_NAME>
+ git tag <TAG_NAME>             create tag name in our local env
  git tag v.1.1
+ 
+ git tag <TAG_NAME> commit_id   create tag name with that commit id in our local
+ git tag v.1.1 3asd1231
  
  Delete Tag
  -----------
- git tag -d <TAG_NAME>
+ git tag -d <TAG_NAME>   deleted the tag name in our local
  git tag -d v.1.1
  
- git push origin <tag_name>
- git push origin tag-1.2
- git push origin --tags
- git push origin -d tag-1.2
- git push origin -d tag-1.2 tag-1.3 tag-1.4
+ git push origin <tag_name>   created the tag name in central repository
+ git push origin tag-1.2      
+ git push origin --tags                       created the all tag name in centrol repository
+ git push origin -d tag-1.2                   deleted the tag name from the centrol repository
+ git push origin -d tag-1.2 tag-1.3 tag-1.4   deleted the tag names from the centrol repository
+ 
+ 
  
  
  
