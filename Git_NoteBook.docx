@@ -201,7 +201,17 @@ f1.txt | 0
  
  
  Difference between Merge and re-base ?
+ 
  Branch(master) to branch(feture/v.1.1), if we merge the data then one extra commit id will generate and merged the data from branch(master) to branch(feture/v.1.1)
+ git merge master1
+ extra commit id will generate
+ Branch(master) to branch(feture/v.1.1), if we use rebase (merge) the data then one extra commit id will not generate and merged the data from branch(master) to branch(feture/v.1.1)
+ git rebase master1
+ extra commit id will not generate
+ 
+ Difference between pull and push ?
+ pull is centrol repository to local repository
+ push is local repository to centrol repository
  
  
  
