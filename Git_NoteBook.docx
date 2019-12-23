@@ -182,7 +182,30 @@ f1.txt | 0
  Amend   - amend use to change the latest commit message.
  ======
  git commit --amend -m <COMMIT MESSAGE>
- git commit --amend -m "added commit"   
+ git commit --amend -m "modify the added commit"   
+ 
+ Ignore  - Ignore the file
+ ========
+ touch t1
+ touch t2
+ touch t3
+ vi .gitIgnore
+ .gitIgonre
+ t1
+ t2
+ t3
+ 
+ git status
+ .gitIgnore in red colour
+ t1 t2 t3 files moved to .gitInore file.
+ 
+ 
+ Difference between Merge and re-base ?
+ Branch(master) to branch(feture/v.1.1), if we merge the data then one extra commit id will generate and merged the data from branch(master) to branch(feture/v.1.1)
+ 
+ 
+ 
+ 
  
  
  
