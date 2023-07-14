@@ -1,5 +1,3 @@
-
-
 git init: Initializes a new Git repository.
 git clone [repository URL]: Creates a local copy of a remote repository.
 git add [file]: Adds a file to the staging area.
